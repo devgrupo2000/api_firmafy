@@ -1,6 +1,6 @@
 <?php
-    include 'Emprendis_API.php';
-    $api = new emprendis();
+    include 'Firmafy.php';
+    $api = new firmafy();
 
     $data = array(
         'action'  => 'Consultar_Cliente_Nif',
