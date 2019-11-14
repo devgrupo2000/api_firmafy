@@ -34,10 +34,10 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'action'  => 'Consultar_Cliente_Nif',
         'cif' => '99999999', // cif / nif
     );
-    echo $new_plan = $api -> setData($data) -> send();
+    $new_plan = $api -> setData($data) -> send();
     $new_plan = json_decode($new_plan);
-    $id_show = $new_plan->data->id_show;
-   
+    $id_show = $new_plan->data->id_show; // En este punto ya conoceríamos el valor de id_show
+    echo $id_show; // Si queremos, podemos mostrarlo para comprobar cual es
 ?>
  ``` 
  
