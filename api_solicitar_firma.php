@@ -32,7 +32,7 @@
         'id_show' => '0000000000000000000',//id cliente
         'template_name' => 'Plantilla 001',
         'signer' => json_encode($firmantes),
-        'pdf' => curl_file_create('Documento.pdf','application/pdf','Documento.pdf')
+        'pdf' => curl_file_create(__DIR__.'/Documento.pdf','application/pdf','Documento.pdf')
     );
 
     $new_plan = $api -> setData($data) -> send();
