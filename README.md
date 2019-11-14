@@ -78,7 +78,7 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'id_show' =>  $id_show,           //id cliente, es decir, el id_show obtenido previamente
         'template_name' => 'Plantilla 001',
         'signer' => json_encode($firmantes),
-        'pdf' => curl_file_create('Documento.pdf','application/pdf','Documento.pdf')
+        'pdf' => curl_file_create(__DIR__.'/Documento.pdf','application/pdf','Documento.pdf')
     );
 
     $new_plan = $api -> setData($data) -> send();
