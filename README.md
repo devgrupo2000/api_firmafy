@@ -54,7 +54,7 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'role'     => 'PERSONA FÍSICA', // PERSONA FÍSICA | PERSONA JURÍDICA
         'nombre'   => 'Jhon Smith',
         'nif'      => '12345678A',
-        'cargo'    => 'Gerente',
+        'cargo'    => 'Gerente',        // Administrador | Responsable | Gerente
         'email'    => 'jhon@email.com',
         'telefono' => '111111111',
         'empresa'  => '',
@@ -65,7 +65,7 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'role'     => 'PERSONA FÍSICA', // PERSONA FÍSICA | PERSONA JURÍDICA
         'nombre'   => 'Susan Miller',
         'nif'      => '12345678A',
-        'cargo'    => 'Gerente',
+        'cargo'    => 'Gerente',        // Administrador | Responsable | Gerente
         'email'    => 'susan@email.com',
         'telefono' => '111111111',
         'empresa'  => '',
