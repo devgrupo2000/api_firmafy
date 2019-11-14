@@ -17,7 +17,7 @@ Asegúrate usando `phpinfo()` que la extensión `curl` quedó correctamente inst
 ![alt text](https://firmafy.com/wp-content/uploads/2019/10/curl.PNG "curl habilitado")
 
 ##### Configuración de credenciales y uso del servicio
-Una vez hecho esto, para iniciar a usar la API, deben configurarse las credenciales del servicio en el archivo `Firmafy_API.php`
+Una vez hecho esto, para iniciar a usar la API, deben configurarse las credenciales del servicio en el archivo `Firmafy.php`
 ```php
         $this -> _user = 'USUARIO app.firmafy.com';
         $this -> _password = 'CLAVE app.firmafy.com';
