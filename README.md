@@ -3,7 +3,8 @@
 # API Firmafy
 
 ### ¡Nuevas funciones!
-  - Solicitar_Firma: Poder enviar los firmantes para un documento cuya plantilla ha sido previamente creada
+  - [Obtener_Ruta_Documento](https://github.com/devgrupo2000/api_firmafy/blob/master/api_obtener_ruta_documento.php): Podrá obtener la ruta del documento original firmado y de la auditoría
+  - [Solicitar_Firma](https://github.com/devgrupo2000/api_firmafy/blob/master/api_solicitar_firma.php): Poder enviar los firmantes para un documento cuya plantilla ha sido previamente creada
 
 ### Instalacion
 API Firmafy requiere [PHP](https://www.php.net/releases/7_2_0.php) v7.2+ para ejecutarse.
