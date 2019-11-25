@@ -8,7 +8,7 @@ class firmafy{
     private $_token;
     function __construct()
     {
-        $this -> _target = 'https://emprendis.com/ApplicationProgrammingInterface.php';
+        $this -> _target = 'https://app.firmafy.com/ApplicationProgrammingInterface.php';
         $this -> _user = 'USUARIO app.firmafy.com';
         $this -> _password = 'CLAVE app.firmafy.com';
         $this -> _mkey   = 'client.mkey';
