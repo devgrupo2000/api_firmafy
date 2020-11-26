@@ -59,7 +59,8 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'email'    => 'jhon@email.com',
         'telefono' => '111111111',
         'empresa'  => '',
-        'cif'      => ''
+        'cif'      => '',
+        'type_notifications' => 'email'
     );
     //Firmante 2
     $firmantes[] = array(
@@ -70,7 +71,8 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'email'    => 'susan@email.com',
         'telefono' => '111111111',
         'empresa'  => '',
-        'cif'      => ''
+        'cif'      => '',
+        'type_notifications' => 'sms'
     );
     
     $data = array(
@@ -85,8 +87,11 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'action'  => 'Solicitar_Firma',
         'id_show' =>  $id_show,           //id cliente, es decir, el id_show obtenido previamente
         'template_name' => 'Plantilla 001',
+        'template_session'=> false,
+        'fecha_vencimiento' => (Si no se indica este parámetro no tiene caducidad) **el formato es: Y-m-d H:i:s
         'signer' => json_encode($firmantes),
-        'pdf' => curl_file_create(__DIR__.'/Documento.pdf','application/pdf','Documento.pdf')
+        'pdf' => curl_file_create(__DIR__.'/Documento.pdf','application/pdf','Documento.pdf') 
+        ** en caso de enviar en base_64 ** sustituir 'pdf' por 'pdf_base64'
     );
 
     $new_plan = $api -> setData($data) -> send();
