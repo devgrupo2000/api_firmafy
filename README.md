@@ -2,8 +2,6 @@
 ![alt text](https://firmafy.com/wp-content/uploads/2019/10/logo_con_fondo.PNG "Logo Firmafy")
 # API Firmafy
 
-### ¡Nuevas funciones!
-  - [Obtener_Ruta_Documento](https://github.com/devgrupo2000/api_firmafy/blob/master/api_obtener_ruta_documento.php): Podrá obtener la ruta del documento original firmado y de la auditoría
   - [Solicitar_Firma](https://github.com/devgrupo2000/api_firmafy/blob/master/api_solicitar_firma.php): Poder enviar los firmantes para un documento cuya plantilla ha sido previamente creada
 
 ### Instalacion
