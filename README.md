@@ -23,21 +23,8 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
 ```
 
 ##### Ejemplo solicitar firma
- Para poder enviar la información de los firmantes junto al documento, primero debes conocer cual es tu `id_show` (id cliente). Puedes hacerlo de la siguiente manera:
- ```php
- <?php
-    include 'Firmafy.php';
-    $api = new firmafy();
+ Para poder enviar la información de los firmantes junto al documento, primero debes conocer cual es tu `id_show` Podrás obtenerlo en Configuración del Perfil Administrador en la plataforma Firmafy. Puedes hacerlo de la siguiente manera:
 
-    $data = array(
-        'action'  => 'Consultar_Cliente_Nif',
-        'cif' => '99999999', // cif / nif
-    );
-    $new_plan = $api -> setData($data) -> send();
-    $new_plan = json_decode($new_plan);
-    $id_show = $new_plan->data->id_show; // En este punto ya conoceríamos el valor de id_show
-    echo $id_show; // Si queremos, podemos mostrarlo para comprobar cual es
-?>
  ``` 
  
  Una vez se conozcas el valor de `id_show`, puedes proceder a enviar la información de los firmantes junto al documento indicando la plantilla a usar. 
@@ -73,16 +60,10 @@ Una vez hecho esto, para iniciar a usar la API, deben configurarse las credencia
         'type_notifications' => 'sms'
     );
     
-    $data = array(
-        'action'  => 'Consultar_Cliente_Nif',
-        'cif' => '99999999', // cif / nif
-    );
-    $new_plan = $api -> setData($data) -> send();
-    $new_plan = json_decode($new_plan);
-    $id_show = $new_plan->data->id_show;
+   
 
     $data = array(
-        'action'  => 'Solicitar_Firma',
+        'action'  => 'request',
         'id_show' =>  $id_show,           //id cliente, es decir, el id_show obtenido previamente
         'template_name' => 'Plantilla 001',
         'template_session'=> false,
