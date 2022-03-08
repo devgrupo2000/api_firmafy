@@ -28,7 +28,7 @@
     
 
     $data = array(
-        'action'  => 'Request',
+        'action'  => 'request',
         'id_show' => '0000000000000000000',//id cliente
         'template_name' => 'Plantilla 001',
         'signer' => json_encode($firmantes),
